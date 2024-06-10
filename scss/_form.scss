@@ -1,0 +1,197 @@
+.form {
+    padding: 70px 15px;
+    margin-top: -50px;
+
+    // @media (max-width: 1440px) {
+    //     padding: 50px 15px;
+    // }
+
+    @media (max-width: 520px) {
+        padding: 40px 15px;
+        margin-top: -40px;   
+    }
+
+    &__wrapper {
+        width: 100%;
+        max-width: 1620px;
+        margin: 0 auto;
+        padding: 88px 130px;
+        border-radius: 32px;
+        background: #252525;
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 20px;
+
+        // @media (max-width: 1440px) {
+        //     align-items: center;
+        //     padding: 60px 140px;
+        // }
+
+        @media (max-width: 980px) {
+            padding: 40px;
+            border-radius: 16px;
+        }
+
+        @media (max-width: 520px) {
+            padding: 24px;
+            display: grid;
+        }
+    }
+
+    &__desc {
+        position: relative;
+        width: 100%;
+        max-width: 860px;
+
+        @media (max-width: 520px) {
+            padding-bottom: 20px;
+        }
+        &_title {
+            color: #fff;
+            font-size: 74px;
+            line-height: 90%;
+            font-weight: 600;
+            font-family: "Manrope", sans-serif;
+            margin-bottom: 32px;
+
+            // @media (max-width: 1440px) {
+            //     font-size: 54px;
+            // }
+
+            @media (max-width: 980px) {
+                font-size: 36px;
+            }
+
+            @media (max-width: 520px) {
+                margin-bottom: 16px;
+            }
+
+            .color {
+                font-size: 74px;
+                line-height: 90%;
+                font-weight: 600;
+                font-family: "Manrope", sans-serif;
+                color: #FF881B;
+
+                // @media (max-width: 1440px) {
+                //     font-size: 54px;
+                // }
+
+                @media (max-width: 980px) {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        &_pr {
+            font-size: 32px;
+            line-height: 120%;
+            color: #fff;
+
+            // @media (max-width: 1440px) {
+            //     font-size: 26px;
+            // }
+
+            @media (max-width: 980px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 520px) {
+                font-size: 16px;
+            }
+        }
+
+        &_img {
+            margin-left: auto;
+            margin-right: 100px;
+
+            @media (max-width: 520px) {
+                margin: 0;
+                position: absolute;
+                transform: rotateY(180deg) rotateZ(40deg);
+                width: 50px;
+                right: 0;
+                bottom: 0;
+            }   
+        }
+    }
+
+    &__area {
+        display: grid;
+        grid-gap: 16px;
+
+        @media (max-width: 520px) {
+            grid-gap: 12px;
+        }
+        &_inp {
+            background: #fff;
+            border-radius: 8px;
+            padding: 22px 24px;
+            font-size: 20px;
+            color: #888;
+
+            &::placeholder {
+                font-size: 20px;
+                color: #888;
+
+                @media (max-width: 980px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 520px) {
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 980px) {
+                padding: 12px 24px;
+                font-size: 18px;
+            }
+            @media (max-width: 520px) {
+                padding: 20px 24px;
+                font-size: 16px;
+            }
+        }
+
+        &_info {
+            font-size: 16px;
+            color: #888;
+
+            @media (max-width: 980px) {
+                font-size: 14px;   
+            }
+            @media (max-width: 520px) {
+                font-size: 12px;
+                margin-top: -4px;
+            }
+        }
+
+        &_submit {
+            display: block;
+            width: 100%;
+            border-radius: 60px;
+            background: linear-gradient(to right, #FF881B 0%, #FF5935 100%);
+            text-align: center;
+            color: #fff;
+            font-weight: 600;
+            font-size: 32px;
+            font-family: "Manrope", sans-serif;
+            padding: 23px;
+            margin-top: 16px;
+
+            // @media (max-width: 1440px) {
+            //     padding: 16px;
+            //     font-size: 26px;
+            // }
+
+            @media (max-width: 980px) {
+                font-size: 22px;   
+            }
+
+            @media (max-width: 520px) {
+                padding: 22px;
+                font-size: 20px;
+                margin-top: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Onest:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #252525;
+    font-weight: 400;
+    line-height: 130%;
+    font-family: "Onest", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+select,
+input,
+textarea {
+    display: block;
+    border: none;
+    background: none;
+    outline: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+
+// animation 
+.hover {
+    transition: .3s !important;
+
+    * {
+        transition: .3s !important;
+    }
+
+    &:hover,
+    &.active {
+        transition: .3s m !important;
+        background: #252525 !important;
+        color: #fff !important;
+
+        * {
+            transition: .3s !important;
+            color: #fff !important;
+        }
+    }
+}
+
+.zoom {
+    position: relative;
+    z-index: 1010;
+    transition: .3s !important;
+    transform: scale(1) !important;
+
+    &:hover {
+        z-index: 1020;
+        transition: .3s !important;
+        transform: scale(1.02) !important;
+        box-shadow: 0px 0px 50px 1px #25252590 !important;
+    }
+}
+
+
+.fade {
+    position: relative;
+    opacity: 0;
+
+    &-right {
+        transition: .3s;
+        left: -300px;
+
+        &.active {
+            opacity: 1;
+            transition: .3s;
+            left: 0px;
+        }
+    }
+
+    &-left {
+        transition: .3s;
+        right: -300px;
+
+        &.active {
+            opacity: 1;
+            transition: .3s;
+            right: 0px;
+        }
+    }
+
+    &-zoom {
+        transition: .3s;
+        transform: scale(.5);
+
+        &.active {
+            opacity: 1;
+            transition: .3s;
+            transform: scale(1);
+        }
+    }
+
+    &-ms100 {
+        transition: .4s;
+
+        &.active {
+            opacity: 1;
+            transition: .4s;
+        }
+    }
+
+    &-ms200 {
+        transition: .5s;
+
+        &.active {
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+
+    &-ms300 {
+        transition: .6s;
+
+        &.active {
+            opacity: 1;
+            transition: .6s;
+        }
+    }
+}

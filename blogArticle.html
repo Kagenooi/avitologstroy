@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/blogArticle/blogArticle.css">
+</head>
+<body>
+    <div id="adaptive">
+        
+        <div class="social">
+            <div class="social__wrapper">
+                <a href="" class="social__link"><img src="images/teleg.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/wapp.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/mess.svg" alt="" class="social__link_icon"></a>
+            </div>
+            <button type="button" class="social__btn" onclick="social()">
+                <img src="images/closeSocial.svg" alt="" class="social__btn_icon">
+            </button>
+        </div>
+        
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+                <a href="index.html" class="navbar__logo">
+                    <img src="images/logo.png" alt="" class="navbar__logo_icon">
+                </a>
+                <div class="navbar__menu">
+                    <button type="button" class="navbar__menu_btn" onclick="navbarMenu(this)">
+                        <img src="images/mobileMenu.svg" alt="" class="navbar__menu_btn_icon">
+                    </button>
+                    <ul class="navbar__menu_list">
+                        <li><a href="index.html" class="navbar__menu_list_link">Услуги</a></li>
+                        <li><a href="index.html" class="navbar__menu_list_link">Этапы</a></li>
+                        <li><a href="index.html" class="navbar__menu_list_link">Портфолио</a></li>
+                        <li><a href="blog.html" class="navbar__menu_list_link">Блог</a></li>
+                        <li><a href="#footer" class="navbar__menu_list_link">Контакты</a></li>
+                    </ul>
+                </div>
+                <a href="tel::+79939668867" class="navbar__phone">
+                    <img src="images/phoneNav.svg" alt="" class="navbar__phone_icon">
+                    <span class="navbar__phone_number">+7 (993) 966-88-67</span>
+                </a>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__top">
+                    <div class="header__top_content">
+                        <h1 class="header__title">6 советов, как увеличить эффективность профиля на Авито Услугах</h1>
+                        <p class="header__top_date">22.04.2024</p>
+                    </div>
+                    <div class="header__pic">
+                        <img src="images/blog1.png" alt="" class="header__pic_img">
+                    </div>
+                </div>
+                <div class="header__navigation">
+                    <h2 class="header__navigation_title">Содержание</h2>
+                    <ol class="header__navigation_list">
+                        <li><a href="#article1">Подтвердить профиль</a></li>
+                        <li><a href="#article2">Назвать профиль своим именем и добавить личное фото</a></li>
+                        <li><a href="#article3">Подготовить подробное описание с призывом к действию</a></li>
+                        <li><a href="#article4">Добавить в портфолио примеры работ</a></li>
+                        <li><a href="#article5">Настроить тариф</a></li>
+                        <li><a href="#article6">Следить за рейтингом и отзывами</a></li>
+                    </ol>
+                    <a href="#article7" class="header__navigation_link">Коротко: как сделать профиль на Авито более эффективным</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="article" id="article1">
+                <h2 class="article__title">1. Подтвердить профиль</h2>
+                <div class="article__item">
+                    <p class="article__item_pr">По данным Авито, 85% заказчиков услуг хотели бы убедиться, что профиль принадлежит реальному человеку. Чтобы подтвердить свою личность, нужно получить значок «Документы проверены» или «Реквизиты проверены». Он говорит о том, что профилем владеет реальный человек или компания.</p>
+                    <p class="article__item_pr">Чтобы получить значок, пройдите проверку. Нажмите на свой аватар в правом верхнем углу экрана и выберите раздел «Управление профилем». В разделе «Подтверждение данных» укажите способ проверки.</p>
+                </div>
+                <div class="article__item">
+                    <h3 class="article__item_title">Для физлиц и самозанятых:</h3>
+                    <ul class="article__item_list">
+                        <li class="article__item_list_el">— По паспорту или водительским правам.</li>
+                        <li class="article__item_list_el">— В онлайн-банке через Сбер ID или Tinkoff ID.</li>
+                    </ul>
+                </div>
+                <div class="article__item">
+                    <h3 class="article__item_title">Для ИП и компаний:</h3>
+                    <ul class="article__item_list">
+                        <li class="article__item_list_el">— По ИНН.</li>
+                        <li class="article__item_list_el">— В онлайн-банке через Сбер Бизнес ID или Tinkoff Business ID.</li>
+                    </ul>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article1.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">Если выбрать проверку по документам, нужно загрузить фото паспорта или водительских прав</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article" id="article2">
+                <h2 class="article__title">2. Назвать профиль своим именем и добавить личное фото</h2>
+                <div class="article__item">
+                    <p class="article__item_pr"><b class="bold">Частному мастеру.</b> Укажите своё имя и загрузите собственное изображение. Так можно сделать профиль своей визитной карточкой и повысить уровень доверия клиентов. На фотографии должны быть именно вы, а не другой человек.</p>
+                    <p class="article__item_pr"><b class="bold">Бизнесу.</b> В профиле можно использовать личное имя и фото человека, который играет роль лица бренда. Подойдёт владелец бизнеса, менеджер или другой официальный представитель компании.</p>
+                    <p class="article__item_pr">Если «лица» нет или речь идёт о крупном и узнаваемом бренде, используйте его название и логотип. Будет уместно и в том случае, если компания не намерена представляться именем человека по внутренним причинам.</p>
+                </div>
+                <div class="article__item">
+                    <h3 class="article__item_title bold">Требования к личным фото:</h3>
+                    <ul class="article__item_list">
+                        <li class="article__item_list_el bold">— Лучше использовать качественный снимок: не размытый и на нейтральном, желательно светлом фоне.</li>
+                        <li class="article__item_list_el bold">— Лицо нужно показать крупным планом, чтобы пользователи могли его разглядеть.</li>
+                    </ul>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article2.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">Оформление на примере онлайн-школы Савелия Лаврентьева. В профиле есть имя и фото владельца бизнеса</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article" id="article3">
+                <h2 class="article__title">3. Подготовить подробное описание с призывом к действию</h2>
+                <div class="article__item">
+                    <p class="article__item_pr">Добавьте в профиль описание — информацию о себе или своей компании. Что необходимо в нём указать:</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_wrapper">
+                        <div class="article__item_wrapper_el dark">
+                            <h4 class="article__item_wrapper_el_title">Для частных мастеров:</h4>
+                            <ul class="article__item_wrapper_el_list">
+                                <li><span>Профильное образование (при наличии)</span></li>
+                                <li><span>Опыт работы</span></li>
+                                <li><span>Используемые материалы и техники</span></li>
+                                <li><span>Краткое описание услуги или услуг, если их несколько</span></li>
+                                <li><span>Преимущества: например, наличие лицензии в сфере красоты и здоровья, работа с оригинальными автозапчастями, выезд на заказы 24/7, работа на дому</span></li>
+                                <li><span>Акции, скидки и специальные предложения</span></li>
+                            </ul>
+                        </div>
+                        <div class="article__item_wrapper_el dark">
+                            <h4 class="article__item_wrapper_el_title">Для компании:</h4>
+                            <ul class="article__item_wrapper_el_list">
+                                <li><span>Сфера деятельности, в которой у компании есть экспертиза</span></li>
+                                <li><span>Количество лет на рынке</span></li>
+                                <li><span>Используемые технологии и оборудование</span></li>
+                                <li><span>Краткое описание спектра услуг</span></li>
+                                <li><span>Преимущества: гарантия выполненных работ, гарантия оборудования, бесплатные консультации, возможность доставки по всей стране</span></li>
+                                <li><span>Акции, скидки, специальные предложения и программы лояльности для клиентов</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr">Для удобства чтения разделите текст на абзацы. Пишите лёгким и дружелюбным языком: без канцеляризмов и сложных оборотов. Например:</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_wrapper">
+                        <div class="article__item_wrapper_el light">
+                            <p class="article__item_wrapper_el_pr">Мы занимаемся обучением на дому. Работаем с детьми от 3 до 7 лет.</p>
+                            <p class="article__item_wrapper_el_pr">Рассказываем просто о сложном: объясним то, что не смог объяснить учитель в школе.</p>
+                            <p class="article__item_wrapper_el_pr">И всё это — в удобном онлайн-формате. С учётом вашего часового пояса.</p>
+                        </div>
+                        <div class="article__item_wrapper_el light">
+                            <p class="article__item_wrapper_el_pr">Наша компания специализируется на обучении детей дошкольного возраста. В нашей команде работают профессионалы с большим стажем, которые готовы поделиться экспертизой в рамках широкого спектра вопросов процесса обучения. Работа проводится в дистанционном формате, который актуален ещё со времён пандемии 2020 года.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr">Начните или завершите текст призывом к действию, чтобы мотивировать клиента заказать услугу. К примеру, вы можете написать: «Приходите к нам до 25 декабря и получите скидку 25% на первый заказ!» Или: «Запишитесь сейчас, и мы проведём для вас первое занятие бесплатно».</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article3.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">Можно написать призыв к действию в заключительной части описания, как в профиле сети студий маникюра и педикюра 4hands</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article" id="article4">
+                <h2 class="article__title">4. Добавить в портфолио примеры работ</h2>
+                <div class="article__item">
+                    <p class="article__item_pr"><b class="bold">Дополните описание профиля фотографиями.</b> Загрузите в портфолио качественные снимки работ, чтобы заказчики видели, на что вы способны. Выберите фото, на которых можно легко рассмотреть детали, а также изображения в формате «До и после».</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article4.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">Оформление портфолио на примере сети 4hands</p>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr"><b class="bold">Добавьте фото интерьера или рабочего места.</b> Снимки могут пригодиться, если вы оказываете услуги в салоне красоты или оборудовали рабочее место дома.</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article5.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">В профиле сети 4hands есть фотографии интерьера. Это позволяет сразу оценить атмосферу и увидеть, какая обстановка будет окружать во время бьюти-процедур</p>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr">Для некоторых услуг сложно подобрать фото с примерами работ. В таких случаях подходят снимки, связанные с рабочим процессом, или фотографии используемой техники. Если примеров нет, раздел с фотогалереей не будет отображаться в профиле.</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article6.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">Обучение — одна из услуг, которые сложно продемонстрировать на фото. Но при желании можно: на примере профиля онлайн-школы Савелия Лаврентьева — снимки процесса обучения в классе, за компьютером и по видеосвязи</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article" id="article5">
+                <h2 class="article__title">5. Настроить тариф</h2>
+                <div class="article__item">
+                    <p class="article__item_pr">На Авито можно выбрать набор услуг в тарифе «Базовый», «Расширенный» или «Максимальный». Они упрощают работу с объявлениями и позволяют брендировать профиль.</p>
+                </div>
+                <div class="article__item">
+                    <h3 class="article__item_subtitle">
+                        <img src="images/finger.png" alt="">
+                        Как выбрать набор услуг в тарифе
+                    </h3>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr">По внутренним данным Авито, пользователи чаще интересуются услугами на страницах с баннерами: они доступны в наборах услуг тарифов «Расширенный» и «Максимальный». В первом случае у вас появится возможность разместить один баннер, а во втором — сразу три.</p>
+                    <p class="article__item_pr">Выделиться помогут изображения с узнаваемым дизайном. Сделайте акцент на яркие цвета и контрасты, а также нестандартные формы, композиции и элементы.</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article7.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">В наборе услуг тарифа «Расширенный» доступен один баннер. В этом случае особенно важно использовать изображение, которое подробно раскрывает суть услуги и её преимущества. «Максимальный» даёт больше возможностей — за счёт двух дополнительных баннеров</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article" id="article6">
+                <h2 class="article__title">6. Следить за рейтингом и отзывами</h2>
+                <div class="article__item">
+                    <p class="article__item_pr">Рейтинг виден в поиске, профиле и объявлениях. Заказчики больше доверяют профилям с высоким рейтингом и совершают с ними больше сделок. Алгоритмы Авито выявляют эту закономерность: поэтому чем выше рейтинг, тем выше позиции в поиске. Для усиления своих позиций нужно регулярно собирать обратную связь от пользователей.</p>
+                </div>
+                <div class="article__item">
+                    <div class="article__item_pic">
+                        <img src="images/article8.png" alt="" class="article__item_pic_img">
+                        <p class="article__item_pic_pr">На примере онлайн-школы Савелия Лаврентьева: в профиле пятизвёздочный рейтинг — максимальный на Авито</p>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr">Если клиент доволен услугой, предложите ему поделиться мнением в профиле или чате Авито. Очень важно сделать это сразу после оказания услуги: иначе человек может передумать или забыть оставить отклик.</p>
+                    <p class="article__item_pr">Для получения отзыва в чате нажмите на компьютере три точки справа от имени собеседника. Выберите «Запросить отзыв» и ждите ответа. Если вы пользуетесь приложением, нажмите на имя клиента, а затем — «Запросить отзыв». После этого ему придёт сообщение со ссылкой на форму обратной связи.</p>
+                </div>
+                <div class="article__item">
+                    <h3 class="article__item_subtitle">
+                        <img src="images/finger.png" alt="">
+                        Как устроены рейтинг и отзывы на Авито?
+                    </h3>
+                </div>
+                <div class="article__item">
+                    <p class="article__item_pr">При получении отзыва стоит написать ответ, чтобы вызвать желание вернуться снова. Если отзыв в профиле негативный, опишите ситуацию и предложите решение — так заказчики увидят, что вы следите за репутацией.</p>
+                </div>
+            </section>
+
+            <section class="article" id="article7">
+                <h2 class="article__title">Коротко: как сделать профиль на Авито более эффективным</h2>
+                <div class="article__item">
+                    <p class="article__item_pr"><b class="bold">— Подтвердить, что владелец аккаунта — реальный человек или компания.</b> Для этого нужно пройти проверку по документам или реквизитам. Возможна проверка через онлайн-банк как для физлиц, так и для юрлиц.</p>
+                    <p class="article__item_pr"><b class="bold">— Выбрать название и фото профиля.</b> Подойдут личное имя и фото — даже если у вас компания. Так вы сможете повлиять на уровень доверия к себе и своему бизнесу.</p>
+                    <p class="article__item_pr"><b class="bold">— Подготовить описание.</b> В описании можно указать наличие профильного образования, профессиональный опыт, преимущества, краткий перечень услуг и призыв к действию.</p>
+                    <p class="article__item_pr"><b class="bold">— Заполнить портфолио.</b> Загрузите фото рабочего процесса, примеры работ, изображения в формате «До и после» — в зависимости от типа услуг.</p>
+                    <p class="article__item_pr"><b class="bold">— Дополнить профиль баннерами.</b> Это можно сделать в наборе услуг тарифа «Расширенный» или «Максимальный». Изображения должны быть информативными и раскрывать суть услуги.</p>
+                    <p class="article__item_pr"><b class="bold">— Следить за рейтингом.</b> Чем больше положительных отзывов в профиле, тем выше рейтинг и позиции в поиске. Просите заказчиков делиться обратной связью: можно запросить отзыв в чате Авито или предложить оставить его прямо в профиле.</p>
+                </div>
+                <div class="article__footer">
+                    <p class="article__footer_pr">Источник материала Авито</p>
+                    <p class="article__footer_pr">Анастасия Рыжкова</p>
+                </div>
+            </section>
+
+            <form action="">
+                <section class="form">
+                    <div class="form__wrapper">
+                        <div class="form__desc">
+                            <h2 class="form__desc_title">Получить <strong class="color">бесплатную консультацию</strong></h2>
+                            <p class="form__desc_pr">Перезвоним через 10 минут!</p>
+                            <img src="images/decorArr2.svg" alt="" class="form__desc_img">
+                        </div>
+                        <div class="form__area">
+                            <input type="text" name="" id="" placeholder="Ваше имя" class="form__area_inp">
+                            <input type="text" name="" id="" placeholder="Ваш email" class="form__area_inp">
+                            <input type="text" name="" id="" placeholder="Ваш телефон" class="form__area_inp">
+                            <a href="policy.html" class="form__area_info">*Нажимая кнопку "Отправить" вы даете свое согласие на обработку персональных данных</a>
+                            <button type="button" class="form__area_submit">Отправить</button>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer__wrapper">
+                <div class="footer__lefthand">
+                    <a href="index.html" class="footer__lefthand_logo">
+                        logo
+                        <img src="images/logo.png" alt="" class="footer__lefthand_logo_icon">
+                    </a>
+                    <div class="footer__lefthand_raiting">
+                        <div class="footer__lefthand_raiting_stars">
+                            <strong class="footer__lefthand_raiting_stars_num">5,0</strong>
+                            <div class="footer__lefthand_raiting_stars_pics">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                            </div>
+                        </div>
+                        <p class="footer__lefthand_raiting_pr">Наш рейтинг на Авито</p>
+                    </div>
+                </div>
+                <div class="footer__pic">
+                    <img src="images/footerPic.png" alt="" class="footer__pic_img">
+                </div>
+                <div class="footer__social">
+                    <a href="tel::+79939668867" class="footer__social_link footer__social_phone">
+                        <img src="images/phoneFooter.svg" alt="" class="footer__social_phone_icon">
+                        <span class="footer__social_phone_txt">7 (993) 966-88-67</span>
+                    </a>
+                    <a href="" class="footer__social_link footer__social_telegram">
+                        <img src="images/telegram.svg" alt="" class="footer__social_telegram_icon">
+                    </a>
+                    <a href="" class="footer__social_link footer__social_whatsapp">
+                        <img src="images/whatsApp.svg" alt="" class="footer__social_whatsapp_icon">
+                    </a>
+                </div>
+                <a href="policy.html" class="footer__link">Политика конфиденциальности / 2024</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="js/blogArticle.js"></script>
+</body>
+</html>

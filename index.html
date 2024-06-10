@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/homepage/homepage.css">
+</head>
+<body>
+    <div id="adaptive">
+
+        <div class="social">
+            <div class="social__wrapper">
+                <a href="" class="social__link"><img src="images/teleg.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/wapp.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/wapp.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/mess.svg" alt="" class="social__link_icon"></a>
+            </div>
+            <button type="button" class="social__btn" onclick="social()">
+                <img src="images/closeSocial.svg" alt="" class="social__btn_icon">
+            </button>
+        </div>
+        <form action="">
+            <div class="popup">
+                <div class="popup__wrapper">
+                    <button type="button" class="popup__closeBtn" onclick="popupClose()">
+                        <img src="images/questionBtn.svg" alt="" class="popup__closeBtn_icon">
+                    </button>
+                    <div class="popup__form">
+                        <img src="images/rocket.png" alt="" class="popup__form_decor">
+                        <h2 class="popup__form_title">Дарим <strong class="color">бесплатную</strong><br> консультацияю!</h2>
+                        <p class="popup__form_pr">Оставьте свои данные и наш менеджер свяжется с вами в течение 10 минут</p>
+                        <div class="popup__form_wrapper">
+                            <input type="text" placeholder="Ваше имя" name="" id="" class="popup__form_inp">
+                            <input type="text" placeholder="Ваш телефон" name="" id="" class="popup__form_inp">
+                            <a href="policy.html" class="popup__form_link">*Нажимая кнопку "Отправить" вы даете свое согласие на обработку персональных данных</a>
+                            <button type="button" class="popup__form_submit" onclick="successToggle()">Отправить</button>
+                        </div>
+                    </div>
+                    <div class="popup__success">
+                        <h2 class="popup__success_title">Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время</h2>
+                        <button type="button" class="popup__success_closeBtn" onclick="popupClose()">Понятно</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <nav class="navbar">
+            <div class="navbar__wrapper fade fade-zoom">
+                <a href="index.html" class="navbar__logo">
+                    logo
+                    <img src="images/logo.png" alt="" class="navbar__logo_icon">
+                </a>
+                <div class="navbar__menu">
+                    <button type="button" class="navbar__menu_btn" onclick="navbarMenu(this)">
+                        <img src="images/mobileMenu.svg" alt="" class="navbar__menu_btn_icon">
+                    </button>
+                    <ul class="navbar__menu_list">
+                        <li><a href="#services" class="navbar__menu_list_link">Услуги</a></li>
+                        <li><a href="#steps" class="navbar__menu_list_link">Этапы</a></li>
+                        <li><a href="#cases" class="navbar__menu_list_link">Портфолио</a></li>
+                        <li><a href="blog.html" class="navbar__menu_list_link">Блог</a></li>
+                        <li><a href="#footer" class="navbar__menu_list_link">Контакты</a></li>
+                    </ul>
+                </div>
+                <a href="tel::+79939668867" class="navbar__phone">
+                    <img src="images/phoneNav.svg" alt="" class="navbar__phone_icon">
+                    <span class="navbar__phone_number">+7 (993) 966-88-67</span>
+                </a>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__desc fade fade-zoom">
+                    <h1 class="header__desc_title fadeLeft">Авитолог для <strong class="color">строителей</strong></h1>
+                    <h2 class="header__desc_subtitle">Профессиональное продвижение на Авито!</h2>
+                    <!-- changed -->
+                    <div class="header__desc_slider">
+                        <h3 class="header__desc_secondTitle">Работаем по договору</h3>
+                        <h3 class="header__desc_secondTitle">5 специалистов всего за 1000р в день</h3>
+                        <h3 class="header__desc_secondTitle">Опыт работы 5 лет</h3>
+                        <h3 class="header__desc_secondTitle">Окупай вложения за 10 дней</h3>
+                    </div>
+                    <!-- end -->
+                    <button type="button" class="header__desc_btn popupBtn" onclick="popupToggle()">
+                        <img src="images/arrowDecor.svg" alt="" class="header__desc_btn_icon">
+                        <span class="header__desc_btn_txt">Узнать больше!</span>
+                    </button>
+                    <div class="header__desc_social">
+                        <a href="" class="header__desc_social_link hover">
+                            <img src="images/whatsAppHeader.svg" alt="" class="header__desc_social_link_icon">
+                            <span class="header__desc_social_link_txt">
+                                <span class="header__desc_social_link_txt_reg">Написать в</span>
+                                <b class="header__desc_social_link_txt_bold">WhatsApp</b>
+                            </span>
+                        </a>
+                        <a href="" class="header__desc_social_link hover">
+                            <img src="images/telegramHeader.svg" alt="" class="header__desc_social_link_icon">
+                            <span class="header__desc_social_link_txt">
+                                <span class="header__desc_social_link_txt_reg">Написать в</span>
+                                <b class="header__desc_social_link_txt_bold">Telegram</b>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__righthand">
+                    <div class="header__righthand_pic fade fade-zoom">
+                        <img src="images/headerRighthand.jpg" alt="" class="header__righthand_pic_img">
+                    </div>
+                    <div class="header__righthand_portfolio portfolio fade fade-zoom">
+                        <h3 class="portfolio__title">Наше портфолио:</h3>
+                        <img src="images/starIcon.svg" alt="" class="portfolio__star">
+                        <div class="portfolio__list">
+                            <p class="portfolio__list_pr hover">Теплицы</p>
+                            <p class="portfolio__list_pr hover">Компания</p>
+                            <p class="portfolio__list_pr hover">Кирпичные дома</p>
+                            <p class="portfolio__list_pr hover">Ремонт</p>
+                            <p class="portfolio__list_pr hover">Окна</p>
+                            <p class="portfolio__list_pr hover">Кровля</p>
+                            <p class="portfolio__list_pr hover">Бани</p>
+                        </div>
+                        <a href="#cases" class="portfolio__link hover">Посмотреть</a>
+                    </div>
+                    <div class="header__righthand_trigger trigger fade fade-zoom">
+                        <div class="trigger__pic">
+                            <img src="images/triggerHeader.png" alt="" class="trigger__pic_img">
+                        </div>
+                        <h2 class="trigger__title">Приведем первых покупателей с авито уже на 5-й день работы!</h2>
+                    </div>
+                    <div class="header__righthand_pic bottom fade fade-zoom">
+                        <img src="images/bottomHeader.jpg" alt="" class="header__righthand_pic_img">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="whom">
+                <div class="whom__wrapper">
+                    <h2 class="whom__title fade fade-zoom">Кому подойдут <strong class="color">наши услуги?</strong></h2>
+                    <div class="whom__container">
+                        <div class="whom__item">
+                            <div class="whom__item_pics">
+                                <img src="images/whom1.png" alt="" class="whom__item_pics_img">
+                                <img src="images/whom2.png" alt="" class="whom__item_pics_img m-left">
+                            </div>
+                            <h3 class="whom__item_title">Строительным компаниям и бригадам</h3>
+                        </div>
+                        <div class="whom__item">
+                            <div class="whom__item_pics">
+                                <img src="images/whom3.png" alt="" class="whom__item_pics_img">
+                                <img src="images/whom4.png" alt="" class="whom__item_pics_img m-left">
+                            </div>
+                            <h3 class="whom__item_title">Продавцам строительных материалов и спецтехники</h3>
+                        </div>
+                        <div class="whom__item">
+                            <div class="whom__item_pics">
+                                <img src="images/whom5.png" alt="" class="whom__item_pics_img">
+                                <img src="images/whom6.png" alt="" class="whom__item_pics_img m-left">
+                            </div>
+                            <h3 class="whom__item_title">Цехам и производителям запчастей, готовых конструкций, мебели</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contactIf">
+                <div class="contactIf__wrapper">
+                    <h2 class="contactIf__title fade fade-zoom">Вам точно стоит <strong class="color">обратиться к нам</strong>, если:</h2>
+                    <div class="contactIf__container">
+                        <div class="contactIf__item">
+                            <h3 class="contactIf__item_title">Хотите <br> получать <br> <strong class="color">больше заказов</strong></h3>
+                            <img src="images/contactIf1.png" alt="" class="contactIf__item_icon">
+                        </div>
+                        <div class="contactIf__item">
+                            <h3 class="contactIf__item_title">Получаете <strong class="color">неактуальные заявки</strong></h3>
+                            <img src="images/contactIf2.png" alt="" class="contactIf__item_icon">
+                        </div>
+                        <div class="contactIf__item">
+                            <h3 class="contactIf__item_title">Хотите экономить <strong class="color">время и нервы</strong></h3>
+                            <img src="images/contactIf3.png" alt="" class="contactIf__item_icon">
+                        </div>
+                        <div class="contactIf__item">
+                            <h3 class="contactIf__item_title">Ваши объявления блокируют</h3>
+                            <img src="images/contactIf4.png" alt="" class="contactIf__item_icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="launch" id="steps">
+                <div class="launch__wrapper">
+                    <img src="" alt="" class="launch__img">
+                    <h2 class="launch__title fade fade-zoom">Запуск <strong class="color">проекта</strong></h2>
+                    <div class="launch__container">
+                        <div class="launch__item">
+                            <div class="launch__item_desc">
+                                <div class="launch__item_desc_header">
+                                    <span class="launch__item_desc_header_num">1</span>
+                                    <h3 class="launch__item_desc_header_title">Анализ</h3>
+                                </div>
+                                <p class="launch__item_desc_pr">Подробный анализ продукта и рынка конкурентов</p>
+                            </div>
+                            <div class="launch__item_pic">
+                                <img src="images/launch1.png" alt="" class="launch__item_pic_img">
+                            </div>
+                        </div>
+                        <div class="launch__item">
+                            <div class="launch__item_desc">
+                                <div class="launch__item_desc_header">
+                                    <span class="launch__item_desc_header_num">2</span>
+                                    <h3 class="launch__item_desc_header_title">Маркетинг</h3>
+                                </div>
+                                <p class="launch__item_desc_pr">Разработка маркетинговой стратегии</p>
+                            </div>
+                            <div class="launch__item_pic">
+                                <img src="images/launch2.png" alt="" class="launch__item_pic_img">
+                            </div>
+                        </div>
+                        <div class="launch__item">
+                            <div class="launch__item_desc">
+                                <div class="launch__item_desc_header">
+                                    <span class="launch__item_desc_header_num">3</span>
+                                    <h3 class="launch__item_desc_header_title">Реализация</h3>
+                                </div>
+                                <p class="launch__item_desc_pr">Написание продающих текстов, создание дизайна обложек и профиля</p>
+                            </div>
+                            <div class="launch__item_pic">
+                                <img src="images/launch3.png" alt="" class="launch__item_pic_img">
+                            </div>
+                        </div>
+                        <div class="launch__item end">
+                            <div class="launch__item_desc">
+                                <div class="launch__item_desc_header">
+                                    <span class="launch__item_desc_header_num">4</span>
+                                    <h3 class="launch__item_desc_header_title">Платное продвижение</h3>
+                                </div>
+                                <p class="launch__item_desc_pr">Публикация объявлений согласно стратегии и подключение платного продвижения</p>
+                            </div>
+                            <div class="launch__item_pic">
+                                <img src="images/launch4.png" alt="" class="launch__item_pic_img">
+                            </div>
+                        </div>
+                        <div class="launch__item">
+                            <div class="launch__item_desc">
+                                <div class="launch__item_desc_header">
+                                    <span class="launch__item_desc_header_num">5</span>
+                                    <h3 class="launch__item_desc_header_title">Рекомендации</h3>
+                                </div>
+                                <p class="launch__item_desc_pr">Письменные рекомендации и скрипты отделу продаж для повышения качества сделок</p>
+                            </div>
+                            <div class="launch__item_pic">
+                                <img src="images/launch5.png" alt="" class="launch__item_pic_img">
+                            </div>
+                        </div>
+                        <div class="launch__item">
+                            <div class="launch__item_desc">
+                                <div class="launch__item_desc_header">
+                                    <span class="launch__item_desc_header_num">6</span>
+                                    <h3 class="launch__item_desc_header_title">Ведение профиля</h3>
+                                </div>
+                                <p class="launch__item_desc_pr">Создание новых акаунтов, увеличение товарной матрицы для большего охвата рынка</p>
+                            </div>
+                            <div class="launch__item_pic">
+                                <img src="images/launch6.png" alt="" class="launch__item_pic_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ready">
+                <div class="ready__wrapper">
+                    <div class="ready__desc">
+                        <h2 class="ready__desc_title fade fade-zoom">Готовы начать <strong class="color">привлекать клиентов?</strong></h2>
+                        <p class="ready__desc_pr">Пожизненная скидка 20% пяти новым клиентам до конца месяца!</p>
+                    </div>
+                    <div class="ready__pic">
+                        <img src="images/ready.png" alt="" class="ready__pic_img">
+                    </div>
+                    <div class="ready__footer">
+                        <a href="#services" class="ready__footer_link">
+                            <span class="ready__footer_link_txt">Выбрать тариф</span>
+                            <span class="ready__footer_link_txt">20%</span>
+                        </a>
+                        <div class="ready__footer_discount">
+                            <!-- change -->
+                            <h3 class="ready__footer_discount_title">
+                                <img src="images/fire.png" alt="" class="ready__footer_discount_title_icon">
+                                Осталось 2 места <strong class="color">по скидке</strong> в <span class="mounth">апреле</span>!
+                            </h3>
+                            <!-- end -->
+                            <div class="ready__footer_discount_band">
+                                <span class="ready__footer_discount_band_fill"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team">
+                <div class="team__wrapper">
+                    <h2 class="team__title fade fade-zoom">Над проектом трудится целая <strong class="color">команда профессионалов</strong></h2>
+                    <div class="team__container">
+                        <div class="team__item zoom">
+                            <img src="images/decor1.svg" alt="" class="team__item_decor">
+                            <div class="team__item_header">
+                                <div class="team__item_header_pic">
+                                    <img src="images/team1.png" alt="" class="team__item_header_pic_img">
+                                </div>
+                                <div class="team__item_header_info">
+                                    <p class="team__item_header_name">Иван Васильев</p>
+                                    <p class="team__item_header_proff">Аналитик</p>
+                                </div>
+                            </div>
+                            <p class="team__item_pr">Создание маркетинговой стратегии, аналитика рынка, сегментация целевых аудиторий и формирование стратегии выкладки объявлений</p>
+                        </div>
+                        <div class="team__item zoom">
+                            <img src="images/decor2.svg" alt="" class="team__item_decor">
+                            <div class="team__item_header">
+                                <div class="team__item_header_pic">
+                                    <img src="images/team2.png" alt="" class="team__item_header_pic_img">
+                                </div>
+                                <div class="team__item_header_info">
+                                    <p class="team__item_header_name">Анастасия Мироновская</p>
+                                    <p class="team__item_header_proff">Маркетолог</p>
+                                </div>
+                            </div>
+                            <p class="team__item_pr">Написание продающих текстов, составление семантического ядра и формирование уникального торгового предложения с призывом к действию</p>
+                        </div>
+                        <div class="team__item zoom">
+                            <img src="images/decor4.svg" alt="" class="team__item_decor">
+                            <div class="team__item_header">
+                                <div class="team__item_header_pic">
+                                    <img src="images/team3.png" alt="" class="team__item_header_pic_img">
+                                </div>
+                                <div class="team__item_header_info">
+                                    <p class="team__item_header_name">Сергей Наумов</p>
+                                    <p class="team__item_header_proff">Технический специалист</p>
+                                </div>
+                            </div>
+                            <p class="team__item_pr">Реализация стратегии публикации объявлений, обход блокировок, настройка платного продвижения и составление табличной аналитики ключевых метрик конкурентов</p>
+                        </div>
+                        <div class="team__item zoom">
+                            <img src="images/decor3.svg" alt="" class="team__item_decor">
+                            <div class="team__item_header">
+                                <div class="team__item_header_pic">
+                                    <img src="images/team4.png" alt="" class="team__item_header_pic_img">
+                                </div>
+                                <div class="team__item_header_info">
+                                    <p class="team__item_header_name">Татьяна Хмельницкая</p>
+                                    <p class="team__item_header_proff">Дизайнер</p>
+                                </div>
+                            </div>
+                            <p class="team__item_pr">Создание фирменного дизайна профиля авито и отрисовка привлекающих внимание обложек для объявлений</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tarif" id="services">
+                <div class="tarif__wrapper">
+                    <h2 class="tarif__title fade fade-zoom">Сколько <strong class="color">стоит?</strong></h2>
+                    <div class="tarif__container">
+                        <div class="tarif__item">
+                            <div>
+                                <h3 class="tarif__item_title">Эконом</h3>
+                                <div class="tarif__item_price">
+                                    <p class="tarif__item_price_actual">29 000 ₽</p>
+                                    <p class="tarif__item_price_old">39 000 ₽</p>
+                                    <p class="tarif__item_price_discount">-25%</p>
+                                </div>
+                                <ul class="tarif__item_list">
+                                    <li>До 250 объявлений</li>
+                                    <li>Одна группа товаров</li>
+                                    <li>SEO оптимизация</li>
+                                    <li>Создание конверсионного текста объявлений</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="tarif__item_btn popupBtn" onclick="popupToggle()">Выбрать тариф</button>
+                        </div>
+                        <div class="tarif__item">
+                            <div>
+                                <h3 class="tarif__item_title">Начальный</h3>
+                                <div class="tarif__item_price">
+                                    <p class="tarif__item_price_actual">39 000 ₽</p>
+                                    <p class="tarif__item_price_old">49 000 ₽</p>
+                                    <p class="tarif__item_price_discount">-25%</p>
+                                </div>
+                                <ul class="tarif__item_list">
+                                    <li>Оформление страницы профиля</li>
+                                    <li>До 1000 объявлений</li>
+                                    <li>До 2-х уникальных групп товаров</li>
+                                    <li>До 10 фото с уникальной инфографикой</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="tarif__item_btn popupBtn" onclick="popupToggle()">Выбрать тариф</button>
+                        </div>
+                        <div class="tarif__item">
+                            <div>
+                                <h3 class="tarif__item_title">Стандартный</h3>
+                                <div class="tarif__item_price">
+                                    <p class="tarif__item_price_actual">49 000 ₽</p>
+                                    <p class="tarif__item_price_old">59 000 ₽</p>
+                                    <p class="tarif__item_price_discount">-25%</p>
+                                </div>
+                                <h4 class="tarif__item_subtitle">Все что входит в тариф “Начальный”</h4>
+                                <ul class="tarif__item_list">
+                                    <li>Гарантия результата по договору</li>
+                                    <li>Дорожная карта проекта</li>
+                                    <li>Анализ стратегии ключевых конкурентов</li>
+                                    <li>A/B-тесты маркетинговых гипотез</li>
+                                    <li>До 5000 объявлений</li>
+                                    <li>До 4-х уникальных групп товаров</li>
+                                    <li>До 20 фото с уникальной инфографикой</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="tarif__item_btn popupBtn" onclick="popupToggle()">Выбрать тариф</button>
+                        </div>
+                    </div>
+                    <div class="tarif__discount">
+                        <h3 class="tarif__discount_title">
+                            <img src="images/fire.png" alt="" class="tarif__discount_title_icon">
+                            Осталось 2 места <strong class="color">по скидке</strong> в апреле!
+                        </h3>
+                        <div class="tarif__discount_band">
+                            <span class="tarif__discount_band_fill"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust">
+                <div class="trust__wrapper">
+                    <h2 class="trust__title fade fade-zoom">Почему <strong class="color">нам стоит доверять?</strong></h2>
+                    <div class="trust__container">
+                        <div class="trust__item">
+                            <!-- change -->
+                            <p class="trust__item_tooltip">Каждый специалист в нашей команде
+                                занимается своей частью работы, в которой он является лучшим!</p>
+                            <!-- end -->
+                            <div class="trust__item_pic top">
+                                <img src="images/team1.png" alt="" class="trust__item_pic_img small">
+                                <img src="images/team2.png" alt="" class="trust__item_pic_img small">
+                                <img src="images/team3.png" alt="" class="trust__item_pic_img small">
+                                <img src="images/team4.png" alt="" class="trust__item_pic_img small">
+                            </div>
+                            <h3 class="trust__item_title">Над проектом работаю профессионалы</h3>
+                        </div>
+                        <div class="trust__item">
+                            <!-- change -->
+                            <p class="trust__item_tooltip">Фиксируем обещанный нами результат в договоре!</p>
+                            <!-- end -->
+                            <div class="trust__item_pic">
+                                <img src="images/trust1.png" alt="" class="trust__item_pic_img">
+                            </div>
+                            <h3 class="trust__item_title">Гарантия по договору</h3>
+                        </div>
+                        <div class="trust__item">
+                            <!-- change -->
+                            <p class="trust__item_tooltip">За наш 5-и летний опыт мы точно знаем как профессионально
+                                продвигать бизнес в сфере строительства</p>
+                            <!-- end -->
+                            <div class="trust__item_pic">
+                                <img src="images/trust2.png" alt="" class="trust__item_pic_img">
+                            </div>
+                            <h3 class="trust__item_title">Специализируемся на вашей сфере</h3>
+                        </div>
+                        <div class="trust__item">
+                            <!-- change -->
+                            <p class="trust__item_tooltip">Прошли официальную сертификацию от компании авито, что доказывает наш профессионализм</p>
+                            <!-- end -->
+                            <div class="trust__item_pic">
+                                <img src="images/trust3.png" alt="" class="trust__item_pic_img">
+                            </div>
+                            <h3 class="trust__item_title">Сертифицированные авитологи</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cases" id="cases">
+                <div class="cases__wrapper">
+                    <h2 class="cases__title fade fade-zoom">Наше <strong class="color">портфолио</strong></h2>
+                    <div class="cases__container">
+                        <div class="cases__btns">
+                            <button type="button" class="cases__btns_btn" onclick="casesDrop(this)">
+                                <span class="cases__btns_btn_txt">Выбрать кейс</span>
+                                <img src="images/casesBtn.svg" alt="" class="cases__btns_btn_icon">
+                            </button>
+                            <div class="cases__btns_wrapper">
+                                <button type="button" data-table="case1" class="caseBtn cases__btns_wrapper_btn default" onclick="tables(this)">ФЕРМА</button>
+                                <button type="button" data-table="case2" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">SB SAUNA</button>
+                                <button type="button" data-table="case3" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">ДОМ ВАШЕЙ МЕЧТЫ</button>
+                                <button type="button" data-table="case4" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">КИТ СТРОЙМАТЕРИАЛЫ</button>
+                                <button type="button" data-table="case5" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">PP ROLLED</button>
+                                <button type="button" data-table="case6" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">VSL GROUP</button>
+                                <button type="button" data-table="case7" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">РЕМОНТ ЭКСПРЕСС</button>
+                                <button type="button" data-table="case8" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">ОКНО V</button>
+                                <button type="button" data-table="case9" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">ИЛЬИЧ МАРКЕТ</button>
+                                <button type="button" data-table="case10" class="caseBtn cases__btns_wrapper_btn" onclick="tables(this)">УДАЧНЫЙ ВЫБОР</button>
+                            </div>
+                        </div>
+                        <div class="cases__tables">
+                            <div class="table" id="case1">
+                                <div class="table__btns">
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title"><strong class="color">Строительная</strong> компания ФЕРМА</h3>
+                                        <img src="images/case1.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Настройка нового источника трафика для увеличения числа потенциальных клиентов</span></li>
+                                            <li><span>Соблюдение ценовой политики заявок, установленной на уровне не более 400₽ за лид</span></li>
+                                            <li><span>Заключение 4-5 договоров с заказчиками в месяц</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Провели анализ конкурентов на рынке, исследовали целевую аудиторию для определения стратегии привлечения клиентов</span></li>
+                                        <li><span>Подготовили профиль компании с профессиональным дизайном и готовыми к использованию шаблонами фотографий</span></li>
+                                        <li><span>Разработали стратегию продвижения</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview1.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">Виктор М.</h4>
+                                                <p class="result__review_header_desc_pr">18 октября</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог/Специалист по Авито</p>
+                                        </div>
+                                        <p class="result__review_pr">При выходе на авито площадку возникло много вопросов. Решили сразу обращаться к авитологам и остановились на этой компании. Все четко, результаты не оставили себя ждать и пошли продажи, нашли уже постоянных клиентов, спасибо!</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">Оптимизация реĸламной ĸампании привела ĸ более чем 1,100 заявĸам за 6 месяцев работы</h3>
+                                        <p class="result__desc_pr">Cредняя стоимость заявĸи составила всего 113₽ - значительно ниже стоимости заявоĸ в других реĸламных площадĸах, таĸих ĸаĸ Яндеĸс.Direct или реĸлама во ВКонтаĸте. </p>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic1.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case2">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title">Изготовление <strong class="color">бань</strong></h3>
+                                        <img src="images/case2.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Настройка рекламной компании на Avito.</span></li>
+                                            <li><span>Получение заявок по приемлемой цене – до 300 рублей за заявку, в одном из самых конкурентных городов РФ.</span></li>
+                                            <li><span>Повышение количества просмотров объявлений, получение от 3 целевых заявок в день.</span></li>
+                                            <li><span>Заключение минимум 5-7 договоров в месяц с помощью Avito.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Провели анализ конкурентов на рынке, исследовали целевую аудиторию для определения стратегии привлечения клиентов.</span></li>
+                                        <li><span>Создали и полностью оформили аккаунт с помощью профессионального дизайнера.</span></li>
+                                        <li><span>Разработали эффективную стратегию продвижения объявлений для получения заявок от целевых клиентов.</span></li>
+                                        <li><span>Ежедневная публикация объявлений, с учетом всех алгоритмов Avito.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview2.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">SB Sauna</h4>
+                                                <p class="result__review_header_desc_pr">26 сентября</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог/Услуги Авитолога</p>
+                                        </div>
+                                        <p class="result__review_pr">Работаем второй месяц, результатом довольно. Количество клиентов только увеличивается</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">Оптимизация реĸламной ĸампании</h3>
+                                        <p class="result__desc_pr">Оптимизировав связку нам удалось получить более 270 заявок за два месяца работы и средняя стоимость заявки составила всего 151 рубль, что кратно ниже стоимости за заявку в ВКонтакте или Яндексе</p>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic2.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic3.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case3">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title"><strong class="color">Строительство</strong> кирпичных домов</h3>
+                                        <img src="images/case3.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Создание профессионального аккаунта на авито и привлечение клиентов с этой площадки.</span></li>
+                                            <li><span>Соблюдение стоимости одного обращения клиента – до 100 рублей.</span></li>
+                                            <li><span>Заключение новых договоров с заказчиками с авито.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Провели подготовительную работу: маркетинговый анализ и сбор ключевых фраз, чтобы больше людей смогли найти наше объявление.</span></li>
+                                        <li><span>Создали и полностью оформили аккаунт с помощью профессионального дизайнера.</span></li>
+                                        <li><span>В первый месяц сотрудничества выложили 35 объявлений по Нижегородской области в категориях - услуги, строительство "под ключ" и кровельные работы</span></li>
+                                        <li><span>Дополнительное продвижение лучших объявлений</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview3.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">ДОМ ВАШЕЙ МЕЧТЫ</h4>
+                                                <p class="result__review_header_desc_pr">15 ноября</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог/Продвижение на Авито</p>
+                                        </div>
+                                        <p class="result__review_pr">Агентство работает круто) Нет никакой лишней воды, все по делу и очень доступно объясняют) пунктуальность)))</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">Увеличили процент конверсии с просмотра в полученный контакт и снизили стоимость заявки на 75 %</h3>
+                                        <p class="result__desc_pr">В отчетном периоде были активны 59 объявлений. При затратах 19 071₽ получено:</p>
+                                        <ul class="result__desc_list">
+                                            <li><span>Просмотры объявлений - 10773 раз</span></li>
+                                            <li><span>Полученные контакты - 453</span></li>
+                                            <li><span>Средняя стоимость контакта - 42,1₽</span></li>
+                                            <li><span>Конверсия - 4,2 %</span></li>
+                                            <li><span>Добавления в избранное - 1771</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic4.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic5.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case4">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title">КИТ продажа <strong class="color">стройматериалов</strong></h3>
+                                        <img src="images/case5.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Увеличить продажи и количество обращений</span></li>
+                                            <li><span>Анализ текущих рекламных кампаний и выявление их недостатков</span></li>
+                                            <li><span>Усовершенствование текущих и запуск новых рекламных кампаний</span></li>
+                                            <li><span>Заключение минимум 5-7 договоров каждый месяц с помощью площадки Avito</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Исследование ĸонĸурентов и анализ объявлений</span></li>
+                                        <li><span>Определение целевой аудитории потенциальных клиентов</span></li>
+                                        <li><span>Классифиĸация товаров. Для ĸаждого товара и бренда была создана отдельная позиция. Это позволило увеличить охват просмотров на 23%</span></li>
+                                        <li><span>Ежедневное размещение новых объявлений с услугами продвижения от Avito и инструментом рассылĸи сĸидоĸ</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview5.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">KIT</h4>
+                                                <p class="result__review_header_desc_pr">15 февраля</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог</p>
+                                        </div>
+                                        <p class="result__review_pr">Заказал у этих ребят предложенные услуги. Сделали подробный отчет моего аккаунта. Помогли продвинуть объявления в первые строчки. Продажи поднялись, за что безумно благодарен. Результатом остался доволен на все 100%. Огромное спасибо за выполненную работу.</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">В результате удалось значительно снизить стоимость ĸлиĸов и расходы на реĸламу в общем.</h3>
+                                        <p class="result__desc_pr">Результаты реĸламной ĸампании в цифрах:</p>
+                                        <ul class="result__desc_list">
+                                            <li><span>Просмотры: 12 092</span></li>
+                                            <li><span>Контаĸты: 601</span></li>
+                                            <li><span>Средняя стоимость запроса: 82₽</span></li>
+                                            <li><span>Общий бюджет: 50 тысяч рублей</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic7.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case5">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title">Производственная компания в сфере <strong class="color">комплектации и безопасности кровли</strong></h3>
+                                        <img src="images/case6.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Создать профессиональный профиль на Avito</span></li>
+                                            <li><span>Привлечь постоянных ĸлиентов через площадĸу</span></li>
+                                            <li><span>Настроить систему сбора лидов в CRM для управления заявĸами</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Перед запусĸом реĸламы мы изучили ĸонĸурентов по всей стране, выявили целевую аудиторию</span></li>
+                                        <li><span>Определение целевой аудитории потенциальных клиентов</span></li>
+                                        <li><span>Ежедневное размещение новых объявлений с услугами продвижения от Avito и инструментом рассылĸи сĸидоĸ</span></li>
+                                        <li><span>Создание страницы на Avito, где мы разработали дизайн, ĸонтент и стратегию продвижения</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview6.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">PP POLLED</h4>
+                                                <p class="result__review_header_desc_pr">4 марта</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Сертифицированый Авитолог</p>
+                                        </div>
+                                        <p class="result__review_pr">Мне понравился подход данного авитолога к работе. Бесплатно проводит консультацию исключительно по Вашему запросу, анализируя Ваших влиентов и предлагая дальнейшую стратегию! Рассматриваю его дальше как специалиста для продвижения моих товаров. Рекомендую всем данного специалиста.</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">В результате мы получили более 400 ĸачественных заявоĸ за месяц, при средней стоимости заявĸи 83 рубля</h3>
+                                        <p class="result__desc_pr">Это значительно ниже средних затрат на заявĸу в других реĸламных ĸаналах, подтверждая успешность нашей стратегии и эффеĸтивность проделанной работы</p>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic8.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case6">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title"><strong class="color">Эко-дома и бани</strong> из дерева</h3>
+                                        <img src="images/case9.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Создание профессионального аккаунта на авито и привлечение клиентов с этой площадки.</span></li>
+                                            <li><span>Соблюдение стоимости одного обращения клиента – до 100 рублей.</span></li>
+                                            <li><span>Заключение новых договоров с заказчиками с авито.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Провели маркетинговый анализ и собрали ключевые фразы для подготовительной работы.</span></li>
+                                        <li><span>Написали продающие текста, обработали фотографии клиента.</span></li>
+                                        <li><span>В первый месяц сотрудничества выложили 40 объявлений по разным городам и областям в категориях - услуги, строительство "под ключ" и кровельные работы</span></li>
+                                        <li><span>Разработали стратегию публикации</span></li>
+                                        <li><span>36 раз продвигали конверсионные объявления для удержания позиций в топе и увеличения просмотров.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview9.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">VSL GROUP</h4>
+                                                <p class="result__review_header_desc_pr">6 апреля</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог-Специалист по Авито</p>
+                                        </div>
+                                        <p class="result__review_pr">Знает, что делает. Все по делу. Работаем почти год. Несколько вариантов раскрутки. Обращайтесь и не пожалеете. Всегда на связи и это очень ценно. Удачи в дальнейших делах!</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">Увеличили ĸонверсию с просмотра в ĸонтаĸт и снизили стоимость заявĸи на 75% по сравнению с первым месяцем</h3>
+                                        <p class="result__desc_pr">Результаты реĸламной ĸампании в цифрах:</p>
+                                        <ul class="result__desc_list">
+                                            <li><span>Просмотры объявлений - 18971 раз</span></li>
+                                            <li><span>Полученные ĸонтаĸты - 596 </span></li>
+                                            <li><span>Средняя стоимость ĸонтаĸта - 43,5 рубля </span></li>
+                                            <li><span>Конверсия - 3,14 %</span></li>
+                                            <li><span>Добавления в избранное - 1771 </span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic11.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case7">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title"><strong class="color">Ремонт</strong> квартир</h3>
+                                        <img src="images/case10.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Создание профессионального аккаунта на авито и привлечение клиентов с этой площадки.</span></li>
+                                            <li><span>Выделить направление, с которого приходит больше трафика и хороших заказов.</span></li>
+                                            <li><span>Заключение новых договоров с заказчиками с авито.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Провели подготовительную работу: маркетинговый анализ и сбор ключевых фраз</span></li>
+                                        <li><span>Разместили большое количество объявлений (184) вместо усиленного платного продвижения (использовали только х5). Это давало им возможность охватить больше аудитории за счет большого количества рекламы</span></li>
+                                        <li><span>Дополнительно 32 раза поднимались конверсионные объявления</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview10.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">РЕМОНТ ЭКСПРЕСС</h4>
+                                                <p class="result__review_header_desc_pr">26 апреля</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог-Специалист по Авито</p>
+                                        </div>
+                                        <p class="result__review_pr">Одно удовольствие работать с таким приятным коллективом. Оперативно и эффективно решают все возникшие проблемы. Работают прозрачно и открыто, ни одну задачу не оставляют нерешенной. Авитологов много, а специалисты одни.</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">Общая статистика за год составила 76 ₽ за лид</h3>
+                                        <p class="result__desc_pr">Стоимость конверсии в разные периоды от 800 до 1400 рублей.  За время нашей работы компания выросла в несколько раз. Поток заявок такой большой, что они поднялись из небольшого бизнеса из нескольких мастеров до структуры из более чем 30 человек со своими прорабами и бригадирами.</p>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic12.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case8">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title">Установка <strong class="color">пластиковых окон</strong></h3>
+                                        <img src="images/case4.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Создать и оформить аккаунт Avito, обеспечить максимальный охват среди целевой аудитории</span></li>
+                                            <li><span>Получить заявки на замеры, в дальнейшем – заключение договоров на установку пластиковых окон</span></li>
+                                            <li><span>Выявить объявления с наилучшей конверсией которые дают наименьшую стоимость лида, целевого действия: клика, заявки</span></li>
+                                            <li><span>Увеличить продажи и поток трафика</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Исследовали ĸонĸурентов и провели анализ объявлений, определили целевую аудиторию потенциальных клиентов</span></li>
+                                        <li><span>Подготовили профиль компании с профессиональным дизайном и готовыми к использованию шаблонами фотографий</span></li>
+                                        <li><span>Ежедневное размещение новых объявлений с услугами продвижения от Avito и инструментом рассылĸи сĸидоĸ</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview4.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">OKNO-V</h4>
+                                                <p class="result__review_header_desc_pr">3 февраля</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог/Услуги Авитолога</p>
+                                        </div>
+                                        <p class="result__review_pr">Отличные ребята, профессионалы своего дела, переиграли полностью все объявления 2 раза. Целевая аудитория пишет и интересуется, цель достигнута. На все вопросы всегда развернутый ответ. Объяснения тонкостей работы и возможностей выполнения моих хотелок.</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">В результате удалось значительно снизили стоимость ĸлиĸов и расходы на реĸламу в общем</h3>
+                                        <p class="result__desc_pr">Результаты реĸламной ĸампании в цифрах:</p>
+                                        <ul class="result__desc_list">
+                                            <li><span>Просмотры: 8 901</span></li>
+                                            <li><span>Контаĸты: 692</span></li>
+                                            <li><span>Средняя стоимость запроса: 231₽</span></li>
+                                            <li><span>Общий бюджет: 160 тысяч рублей</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic6.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case9">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title"><strong class="color">Строительные материалы</strong> оптом и в розницу</h3>
+                                        <img src="images/case7.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Увеличить ĸоличество заявоĸ, а также выручĸу ĸомпании</span></li>
+                                            <li><span>Повышение количества просмотров объявлений, получение от 3 целевых заявок в день</span></li>
+                                            <li><span>Заключить с помощью Avito площадки минимум 5-7 договоров в месяц</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Мы начали проеĸт с реĸламного бюджета в 9595 рублей, с целью привлечения заявоĸ по стоимости до 50 рублей и увеличения числа заĸазов до 3-5 в день</span></li>
+                                        <li><span>Провели анализ ĸонĸурентов в данной нише, определили их слабые стороны</span></li>
+                                        <li><span>Разработали униĸальное торговое предложение (УТП), чтобы выделиться на фоне ĸонĸурентов</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview7.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">ИЛЬИЧ МАРКЕТ</h4>
+                                                <p class="result__review_header_desc_pr">29 марта</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог-Специалист по Авито</p>
+                                        </div>
+                                        <p class="result__review_pr">Проделанной работой очень доволен, вложенные средства окупил на следующий день. Очень быстро договорились о работе, получил первого клиента в день обращения</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">При затратах в 124 867 рублей, привлеĸла 2554 ĸачественные заявки, что дало нам стоимость ĸонтаĸта в 50 рублей</h3>
+                                        <p class="result__desc_pr">Наши действия принесли значительный результат, что подтверждает эффеĸтивность нашей работы.</p>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic9.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table" id="case10">
+                                <div class="table__btns">
+                                    <button type="button" class="table__btns_btn" onclick="casesSubdrop(this)">
+                                        <span class="table__btns_btn_txt"></span>
+                                        <img src="images/arrow.svg" alt="" class="table__btns_btn_icon">
+                                    </button>
+                                    <div class="table__btns_wrapper">
+                                        <button type="button" data-table="tusk" class="table__btns_wrapper_btn defaultTable" onclick="subtables(this)">Задача</button>
+                                        <button type="button" data-table="solution" class="table__btns_wrapper_btn" onclick="subtables(this)">Решение</button>
+                                        <button type="button" data-table="result" class="table__btns_wrapper_btn" onclick="subtables(this)">Результат</button>
+                                        <button type="button" data-table="analytic" class="table__btns_wrapper_btn" onclick="subtables(this)">Аналитика</button>
+                                    </div>
+                                </div>
+                                <div class="table__subtable tusk">
+                                    <div class="tusk__pic">
+                                        <h3 class="tusk__desc_title"><strong class="color">Продажа</strong> теплиц, беседок, навесов и парников</h3>
+                                        <img src="images/case8.png" alt="" class="tusk__pic_img">
+                                    </div>
+                                    <div class="tusk__desc">
+                                        <ul class="tusk__desc_list">
+                                            <li><span>Создание профессионального аĸĸаунта на Avito</span></li>
+                                            <li><span>Подготовĸа необходимого ĸоличества объявлений, учитывая ĸонĸуренцию и виды услуг ĸлиента</span></li>
+                                            <li><span>Расчет бюджета на платное продвижение</span></li>
+                                            <li><span>Размещение объявлений в течение месяца</span></li>
+                                            <li><span>Управление рейтингом аĸĸаунта</span></li>
+                                            <li><span>Внедрение чат-бота для оперативной обработĸи заявоĸ</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable solution">
+                                    <h3 class="solution__title"><strong class="color">Как мы решили проблему</strong> нашего клиента</h3>
+                                    <ul class="solution__list">
+                                        <li><span>Анализ ассортимента товаров и подготовĸа объявлений</span></li>
+                                        <li><span>Разработĸа стратегии публиĸации</span></li>
+                                        <li><span>Сбор информации о предоставляемых услугах</span></li>
+                                        <li><span>Ежедневное размещение новых объявлений с услугами продвижения от Avito и инструментом рассылĸи сĸидоĸ</span></li>
+                                    </ul>
+                                </div>
+                                <div class="table__subtable result">
+                                    <div class="result__review">
+                                        <div class="result__review_header">
+                                            <div class="result__review_header_pic">
+                                                <img src="images/caseReview8.png" alt="" class="result__review_header_pic_img">
+                                            </div>
+                                            <div class="result__review_header_desc">
+                                                <h4 class="result__review_header_desc_name">УДАЧНЫЙ ВЫБОР</h4>
+                                                <p class="result__review_header_desc_pr">6 апреля</p>
+                                            </div>
+                                        </div>
+                                        <div class="result__review_info">
+                                            <div class="result__review_info_grade">
+                                                <div class="result__review_info_grade_stars">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                    <img src="images/starIcon.svg" alt="" class="result__review_info_grade_stars_icon">
+                                                </div>
+                                                <h4 class="result__review_info_grade_title">Сделка состоялась</h4>
+                                            </div>
+                                            <p class="result__review_info_pr">Авитолог-Специалист по Авито</p>
+                                        </div>
+                                        <p class="result__review_pr">Великолепный Авитолог! Профессионал и мастер своего дела! Располагет к себе с первого звонка. Все подробно объяснил и помог с Авито. Человек с огромным опытом, обширным ресурсом контактов в сфере рекламы и маркетинга, начиная с дизайнеров заканчивая сайтов.</p>
+                                    </div>  
+                                    <div class="result__desc">
+                                        <h3 class="result__desc_title">Благодаря нашим усилиям по размещению большого ĸоличества объявлений, при расходах 49 161 рублей  мы достигли значительных результатов: </h3>
+                                        <p class="result__desc_pr">Результаты реĸламной ĸампании в цифрах:</p>
+                                        <ul class="result__desc_list">
+                                            <li><span>Просмотры объявлений - 9399 раз</span></li>
+                                            <li><span>Полученные ĸонтаĸты - 890</span></li>
+                                            <li><span>Средняя стоимость ĸонтаĸта - 55,2 рубля</span></li>
+                                            <li><span>Конверсия - 9,47 %</span></li>
+                                            <li><span>Добавления в избранное - 1144</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table__subtable analytic">
+                                    <div class="analytic__wrapper">
+                                        <div class="analytic__pic">
+                                            <img src="images/caseAnalytic10.png" alt="" class="analytic__pic_img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questions">
+                <div class="questions__wrapper">
+                    <h2 class="questions__title fade fade-zoom">Часто <strong class="color">задаваемые вопросы</strong></h2>
+                    <div class="questions__container">
+                        <div class="questions__item">
+                            <button type="button" class="questions__item_btn" onclick="acc(this)">
+                                <h3 class="questions__item_btn_title">Кто такой авитолог и зачем он нужен?</h3>
+                                <img src="images/questionBtn.svg" alt="" class="questions__item_btn_icon">
+                            </button>
+                            <div class="questions__item_content">
+                                <p class="questions__item_pr">Авитолог это специалист по выводу бизнеса на площадку Авито и настройке рекламных компаний, что бы привлекать вам как можно больше качественных заявок</p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <button type="button" class="questions__item_btn" onclick="acc(this)">
+                                <h3 class="questions__item_btn_title">Вы работаете с любыми нишами?</h3>
+                                <img src="images/questionBtn.svg" alt="" class="questions__item_btn_icon">
+                            </button>
+                            <div class="questions__item_content">
+                                <p class="questions__item_pr"></p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <button type="button" class="questions__item_btn" onclick="acc(this)">
+                                <h3 class="questions__item_btn_title">Сколько времени занимает запуск проекта?</h3>
+                                <img src="images/questionBtn.svg" alt="" class="questions__item_btn_icon">
+                            </button>
+                            <div class="questions__item_content">
+                                <p class="questions__item_pr"></p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <button type="button" class="questions__item_btn" onclick="acc(this)">
+                                <h3 class="questions__item_btn_title">Даёте ли вы какие-нибудь гарантии?</h3>
+                                <img src="images/questionBtn.svg" alt="" class="questions__item_btn_icon">
+                            </button>
+                            <div class="questions__item_content">
+                                <p class="questions__item_pr"></p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <button type="button" class="questions__item_btn" onclick="acc(this)">
+                                <h3 class="questions__item_btn_title">Работаете ли с юр.лицами? Предоставляете закрывающие док-ты?</h3>
+                                <img src="images/questionBtn.svg" alt="" class="questions__item_btn_icon">
+                            </button>
+                            <div class="questions__item_content">
+                                <p class="questions__item_pr"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog">
+                <div class="blog__wrapper">
+                    <h2 class="blog__title fade fade-zoom">Читайте полезные фишки в <strong class="color">нашем блоге</strong></h2>
+                    <div class="blog__container">
+                        <div class="blog__item">
+                            <div class="blog__item_pic">
+                                <img src="images/blog1.png" alt="" class="blog__item_pic_img">
+                            </div>
+                            <div class="blog__item_content">
+                                <p class="blog__item_pr">6 советов как увеличить эффективность профиля на Авито</p>
+                                <a href="blog.html" class="blog__item_link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item_pic">
+                                <img src="images/blog2.png" alt="" class="blog__item_pic_img">
+                            </div>
+                            <div class="blog__item_content">
+                                <p class="blog__item_pr">Как крупному бизнесу в Москве нанимать строителей на Авито</p>
+                                <a href="blog.html" class="blog__item_link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item_pic">
+                                <img src="images/blog3.png" alt="" class="blog__item_pic_img">
+                            </div>
+                            <div class="blog__item_content">
+                                <p class="blog__item_pr">Как работает модерация в Авито</p>
+                                <a href="blog.html" class="blog__item_link">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="blog__link">Читать больше</a>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="reviews__wrapper">
+                    <h2 class="reviews__title fade fade-zoom">Отзывы <strong class="color">наших клиентов</strong></h2>
+                    <div class="reviews__container">
+                        <div class="reviews__item">
+                            <div class="reviews__item_header">
+                                <div class="reviews__item_header_user">
+                                    <div class="reviews__item_header_user_pic">
+                                        <img src="images/review1.png" alt="" class="reviews__item_header_user_pic_img">
+                                    </div>
+                                    <div class="reviews__item_header_user_desc">
+                                        <p class="reviews__item_header_user_desc_name">Производство Бытовок</p>
+                                        <p class="reviews__item_header_user_desc_date">24 июня 2023</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__item_header_details">
+                                    <div class="reviews__item_header_details_stars">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                    </div>
+                                    <p class="reviews__item_header_details_pr">Сделка состоялась</p>
+                                </div>
+                                <p class="reviews__item_header_pr">Авитолог/Продвижение на Авито</p>
+                            </div>
+                            <div class="reviews__item_review">
+                                <p class="reviews__item_review_pr">Рекомендую к работе, очень понравилось, как консультируют и относятся к своей работе, вникают в суть, пытаются действительно решить вопрос клиента</p>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="reviews__item_header">
+                                <div class="reviews__item_header_user">
+                                    <div class="reviews__item_header_user_pic">
+                                        <img src="images/review2.png" alt="" class="reviews__item_header_user_pic_img">
+                                    </div>
+                                    <div class="reviews__item_header_user_desc">
+                                        <p class="reviews__item_header_user_desc_name">21 Век Юг</p>
+                                        <p class="reviews__item_header_user_desc_date">17 апреля</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__item_header_details">
+                                    <div class="reviews__item_header_details_stars">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                    </div>
+                                    <p class="reviews__item_header_details_pr">Сделка состоялась</p>
+                                </div>
+                                <p class="reviews__item_header_pr">Авитолог/Услуги Авитолога для строителей</p>
+                            </div>
+                            <div class="reviews__item_review">
+                                <p class="reviews__item_review_pr">Сотрудничаем с авитологами уже больше года! Показали отличный результат, мы получаем большое количесво заявок на регулярной основе! Также существенно сократилась стоимость обращения, что немаловажно.</p>
+                            </div>
+                        </div>
+                        <div class="reviews__item">
+                            <div class="reviews__item_header">
+                                <div class="reviews__item_header_user">
+                                    <div class="reviews__item_header_user_pic">
+                                        <img src="images/review3.png" alt="" class="reviews__item_header_user_pic_img">
+                                    </div>
+                                    <div class="reviews__item_header_user_desc">
+                                        <p class="reviews__item_header_user_desc_name">Теплый дом</p>
+                                        <p class="reviews__item_header_user_desc_date">18 октября 2023</p>
+                                    </div>
+                                </div>
+                                <div class="reviews__item_header_details">
+                                    <div class="reviews__item_header_details_stars">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                        <img src="images/starIcon.svg" alt="" class="reviews__item_header_details_stars_img">
+                                    </div>
+                                    <p class="reviews__item_header_details_pr">Сделка состоялась</p>
+                                </div>
+                                <p class="reviews__item_header_pr">Авитолог/Специалист по Авито</p>
+                            </div>
+                            <div class="reviews__item_review">
+                                <p class="reviews__item_review_pr">Команда ТОПОВЫХ специалистов, которые показывают свой профессионализм на деле. Работают слажено и в сроки, дополнительно предоставляют очень большое количество нужно информации. РЕКОМЕНДУЮ!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <form action="">
+                <section class="form">
+                    <div class="form__wrapper">
+                        <div class="form__desc">
+                            <h2 class="form__desc_title fade fade-zoom">Получить <strong class="color">бесплатную консультацию</strong></h2>
+                            <p class="form__desc_pr">Перезвоним через 10 минут!</p>
+                            <img src="images/decorArr2.svg" alt="" class="form__desc_img">
+                        </div>
+                        <div class="form__area">
+                            <input type="text" name="" id="" placeholder="Ваше имя" class="form__area_inp">
+                            <input type="text" name="" id="" placeholder="Ваш email" class="form__area_inp">
+                            <input type="text" name="" id="" placeholder="Ваш телефон" class="form__area_inp">
+                            <a href="policy.html" class="form__area_info">*Нажимая кнопку "Отправить" вы даете свое согласие на обработку персональных данных</a>
+                            <button type="button" class="form__area_submit">Отправить</button>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer__wrapper">
+                <div class="footer__lefthand">
+                    <a href="index.html" class="footer__lefthand_logo">
+                        logo
+                        <img src="images/logo.png" alt="" class="footer__lefthand_logo_icon">
+                    </a>
+                    <div class="footer__lefthand_raiting">
+                        <div class="footer__lefthand_raiting_stars">
+                            <strong class="footer__lefthand_raiting_stars_num">5,0</strong>
+                            <div class="footer__lefthand_raiting_stars_pics">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                            </div>
+                        </div>
+                        <p class="footer__lefthand_raiting_pr">Наш рейтинг на Авито</p>
+                    </div>
+                </div>
+                <div class="footer__pic">
+                    <img src="images/footerPic.png" alt="" class="footer__pic_img">
+                </div>
+                <div class="footer__social">
+                    <a href="tel::+79939668867" class="footer__social_link footer__social_phone">
+                        <img src="images/phoneFooter.svg" alt="" class="footer__social_phone_icon">
+                        <span class="footer__social_phone_txt">7 (993) 966-88-67</span>
+                    </a>
+                    <a href="" class="footer__social_link footer__social_telegram">
+                        <img src="images/telegram.svg" alt="" class="footer__social_telegram_icon">
+                    </a>
+                    <a href="" class="footer__social_link footer__social_whatsapp">
+                        <img src="images/whatsApp.svg" alt="" class="footer__social_whatsapp_icon">
+                    </a>
+                </div>
+                <a href="policy.html" class="footer__link">Политика конфиденциальности / 2024</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="js/homepage.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

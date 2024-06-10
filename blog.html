@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/blog/blog.css">
+</head>
+<body>
+    <div id="adaptive">
+
+        <div class="social">
+            <div class="social__wrapper">
+                <a href="" class="social__link"><img src="images/teleg.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/wapp.svg" alt="" class="social__link_icon"></a>
+                <a href="" class="social__link"><img src="images/mess.svg" alt="" class="social__link_icon"></a>
+            </div>
+            <button type="button" class="social__btn" onclick="social()">
+                <img src="images/closeSocial.svg" alt="" class="social__btn_icon">
+            </button>
+        </div>
+        
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+                <a href="index.html" class="navbar__logo">
+                    <img src="images/logo.png" alt="" class="navbar__logo_icon">
+                </a>
+                <div class="navbar__menu">
+                    <button type="button" class="navbar__menu_btn" onclick="navbarMenu(this)">
+                        <img src="images/mobileMenu.svg" alt="" class="navbar__menu_btn_icon">
+                    </button>
+                    <ul class="navbar__menu_list">
+                        <li><a href="index.html#services" class="navbar__menu_list_link">Услуги</a></li>
+                        <li><a href="index.html#steps" class="navbar__menu_list_link">Этапы</a></li>
+                        <li><a href="index.html#cases" class="navbar__menu_list_link">Портфолио</a></li>
+                        <li><a href="blog.html" class="navbar__menu_list_link">Блог</a></li>
+                        <li><a href="#footer" class="navbar__menu_list_link">Контакты</a></li>
+                    </ul>
+                </div>
+                <a href="tel::+79939668867" class="navbar__phone">
+                    <img src="images/phoneNav.svg" alt="" class="navbar__phone_icon">
+                    <span class="navbar__phone_number">+7 (993) 966-88-67</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="main">
+            <section class="blog">
+                <div class="blog__wrapper">
+                    <h2 class="blog__title"> У нас есть <strong class="color">много полезного</strong></h2>
+                    <div class="blog__container">
+                        <div class="blog__item">
+                            <div class="blog__item_pic">
+                                <img src="images/blog1.png" alt="" class="blog__item_pic_img">
+                            </div>
+                            <div class="blog__item_content">
+                                <p class="blog__item_pr">6 советов как увеличить эффективность профиля на Авито</p>
+                                <a href="blogArticle.html" class="blog__item_link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item_pic">
+                                <img src="images/blog2.png" alt="" class="blog__item_pic_img">
+                            </div>
+                            <div class="blog__item_content">
+                                <p class="blog__item_pr">Как крупному бизнесу в Москве нанимать строителей на Авито</p>
+                                <a href="blogArticle.html" class="blog__item_link">Читать</a>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item_pic">
+                                <img src="images/blog3.png" alt="" class="blog__item_pic_img">
+                            </div>
+                            <div class="blog__item_content">
+                                <p class="blog__item_pr">Как работает модерация в Авито</p>
+                                <a href="blogArticle.html" class="blog__item_link">Читать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <form action="">
+                <section class="form">
+                    <div class="form__wrapper">
+                        <div class="form__desc">
+                            <h2 class="form__desc_title">Получить <strong class="color">бесплатную консультацию</strong></h2>
+                            <p class="form__desc_pr">Перезвоним через 10 минут!</p>
+                            <img src="images/decorArr2.svg" alt="" class="form__desc_img">
+                        </div>
+                        <div class="form__area">
+                            <input type="text" name="" id="" placeholder="Ваше имя" class="form__area_inp">
+                            <input type="text" name="" id="" placeholder="Ваш email" class="form__area_inp">
+                            <input type="text" name="" id="" placeholder="Ваш телефон" class="form__area_inp">
+                            <a href="policy.html" class="form__area_info">*Нажимая кнопку "Отправить" вы даете свое согласие на обработку персональных данных</a>
+                            <button type="button" class="form__area_submit">Отправить</button>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer__wrapper">
+                <div class="footer__lefthand">
+                    <a href="index.html" class="footer__lefthand_logo">
+                        logo
+                        <img src="images/logo.png" alt="" class="footer__lefthand_logo_icon">
+                    </a>
+                    <div class="footer__lefthand_raiting">
+                        <div class="footer__lefthand_raiting_stars">
+                            <strong class="footer__lefthand_raiting_stars_num">5,0</strong>
+                            <div class="footer__lefthand_raiting_stars_pics">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                                <img src="images/starIcon.svg" alt="" class="footer__lefthand_raiting_stars_pics_img">
+                            </div>
+                        </div>
+                        <p class="footer__lefthand_raiting_pr">Наш рейтинг на Авито</p>
+                    </div>
+                </div>
+                <div class="footer__pic">
+                    <img src="images/footerPic.png" alt="" class="footer__pic_img">
+                </div>
+                <div class="footer__social">
+                    <a href="tel::+79939668867" class="footer__social_link footer__social_phone">
+                        <img src="images/phoneFooter.svg" alt="" class="footer__social_phone_icon">
+                        <span class="footer__social_phone_txt">7 (993) 966-88-67</span>
+                    </a>
+                    <a href="" class="footer__social_link footer__social_telegram">
+                        <img src="images/telegram.svg" alt="" class="footer__social_telegram_icon">
+                    </a>
+                    <a href="" class="footer__social_link footer__social_whatsapp">
+                        <img src="images/whatsApp.svg" alt="" class="footer__social_whatsapp_icon">
+                    </a>
+                </div>
+                <a href="policy.html" class="footer__link">Политика конфиденциальности / 2024</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="js/blog.js"></script>
+</body>
+</html>
